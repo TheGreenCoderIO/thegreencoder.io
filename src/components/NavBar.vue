@@ -8,7 +8,7 @@ const icon = new URL('../assets/icon.png', import.meta.url).href
 </script>
 
 <template>
-  <b-navbar toggleable="lg" type="dark" fixed="top" variant="dark">
+  <b-navbar toggleable="lg" type="dark" fixed="top" sticky="true" variant="dark" >
     <b-navbar-brand ><router-link to="/"><b-img fluid :src="icon"/></router-link></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" variant="light">
         <font-awesome-icon icon="fa-bars" />
